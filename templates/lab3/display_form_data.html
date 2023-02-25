@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            {% if email != '' %}
+                <p style="color: {{color}};">Your email: {{ email }}</p>
+            {% else %}
+                <script>alert('No data for email was providen!')</script>
+            {% endif %}
+            {% if password != '' %}
+                <p>Your password: {{ password }}</p>
+            {% else %}
+                <script>alert('No data for password was providen!')</script>
+            {% endif %}
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+</body>
+</html>
